@@ -18,3 +18,4 @@ D:\DEV\iKesher\iKesher\iKesher\bin\Debug\EntityFramework.xml
 D:\DEV\iKesher\iKesher\iKesher\bin\Debug\EntityFramework.SqlServer.xml
 D:\DEV\iKesher\iKesher\iKesher\obj\Debug\iKesher.csproj.CopyComplete
 D:\DEV\iKesher\iKesher\iKesher\obj\Debug\iKesher_Content.g.cs
+D:\DEV\iKesher\iKesher\iKesher\obj\Debug\iKesher.csproj.AssemblyReference.cache
