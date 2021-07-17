@@ -37,6 +37,12 @@ namespace iKesher
 
         public bool IsHoliday1 { get; set; }
 
+        public int PlanedShiftDate { get; set; }
+
+        public long PlanedShiftDateIn { get; set; }
+
+        public long PlanedShiftDateOut { get; set; }
+        
         public int ShiftDate { get; set; }
 
         public long ShiftDateIn { get; set; }

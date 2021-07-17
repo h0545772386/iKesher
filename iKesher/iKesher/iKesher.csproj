@@ -120,6 +120,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Tech\ק.ש.ר הצעת מחיר.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

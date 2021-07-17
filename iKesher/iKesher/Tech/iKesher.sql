@@ -406,6 +406,9 @@ CREATE TABLE [dbo].[WHours](
 	[IsHoliday] [bit] NOT NULL DEFAULT 0,
 	[IsEveHoliday] [bit] NOT NULL DEFAULT 0,    -- ערב חג
 	[IsHoliday1] [bit] NOT NULL DEFAULT 0,      -- חג + שבת יום אחרי יום
+	[PlanedShiftDate] [int] NOT NULL DEFAULT 0,       -- YYYYMMDD 
+	[PlanedShiftDateIn] [bigint] NOT NULL DEFAULT 0,  -- YYYYMMDDHHMM 
+	[PlanedShiftDateOut] [bigint] NOT NULL DEFAULT 0, -- YYYYMMDDHHMM 
 	[ShiftDate] [int] NOT NULL DEFAULT 0,       -- YYYYMMDD 
 	[ShiftDateIn] [bigint] NOT NULL DEFAULT 0,  -- YYYYMMDDHHMM 
 	[ShiftDateOut] [bigint] NOT NULL DEFAULT 0, -- YYYYMMDDHHMM 
