@@ -10,40 +10,41 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace iKesher
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// EditHostelWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditHostelWindow : Window
     {
-        public MainWindow()
+        public EditHostelWindow()
         {
             InitializeComponent();
             FlowDirection = Base.GetFlowDirection();
+            CommandBindings.Add(new CommandBinding(SystemCommands.MinimizeWindowCommand, MimizeWindow));
+            CommandBindings.Add(new CommandBinding(SystemCommands.CloseWindowCommand, CloseWindow));
         }
 
-        private void BClose_Click(object sender, RoutedEventArgs e)
+        private void CloseWindow(object sender, ExecutedRoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            DialogResult = false;
         }
 
-        private void BMini_Click(object sender, RoutedEventArgs e)
+        private void MimizeWindow(object sender, ExecutedRoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
 
-        private void rbHostel_Click(object sender, RoutedEventArgs e)
+        private void BClose_Click(object sender, RoutedEventArgs e)
         {
-            fram.Navigate(new Hostel());
+
         }
 
-        private void rbReminder_Click(object sender, RoutedEventArgs e)
+        private void BCancel_Click(object sender, RoutedEventArgs e)
         {
-            fram.Navigate(new RemainderPage());
+
         }
     }
 }

@@ -1,0 +1,83 @@
+﻿<Window x:Class="iKesher.EditReminderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iKesher"
+        mc:Ignorable="d"
+        Title="EditReminderWindow" Height="550" Width="700" Style="{StaticResource winmode}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="{DynamicResource PopUpAt_YYYYMMDDHHMM}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <DatePicker Grid.Column="1"
+                        VerticalContentAlignment="Center"
+                        Height="30"></DatePicker>
+            <TextBlock Grid.Row="1" Text="{DynamicResource RemText}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+
+            <TextBlock Grid.Row="2" Text="{DynamicResource RecorsivType}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="2" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+
+            <TextBlock Grid.Row="3" Text="{DynamicResource RecorsivTime}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="3" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+
+            <TextBlock Grid.Row="4" Text="{DynamicResource RecorsivTime1}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="4" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+            <TextBlock Grid.Row="5" Text="{DynamicResource Frequence}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="5" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+
+            <TextBlock Grid.Row="6" Text="{DynamicResource RemColor}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="6" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+            <TextBlock Grid.Row="7" Text="{DynamicResource Status}"
+                       Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="7" Grid.Column="1"
+                      Style="{StaticResource CbStyle}"></ComboBox>
+            <CheckBox Grid.Row="8" Grid.Column="1"
+                      VerticalAlignment="Center"
+                      FontSize="14"
+                      Content="{DynamicResource IsRecorsive}" ></CheckBox>
+
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+            <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>
+            <Button x:Name="bCancel" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Cancel}" Click="BCancel_Click" Margin="10,0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

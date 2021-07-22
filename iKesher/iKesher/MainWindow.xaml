@@ -5,8 +5,205 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="768" Width="1024" Background="{StaticResource DefBackColor}">
+    <Window.Resources>
+        <Storyboard x:Key="OpenMenu">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="GdMain" 
+                                           Storyboard.TargetProperty="Margin"
+                                           >
+                <EasingThicknessKeyFrame KeyTime="0" Value="0"></EasingThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.5" Value="200,40,0,0"></EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMain" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                           >
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="40"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>-->
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMenu" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                           Duration="0:0:1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-200"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bdIco" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="0"  Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8"  Value="1"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bdIco" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="0"  Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8"  Value="1"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+
+            <ColorAnimation Storyboard.TargetName="tbClose"
+                            Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                            From="#FF3580BF"
+                            To="#FFFFFFFF"
+                            Duration="0:0:0.5"/>
+            <ColorAnimation Storyboard.TargetName="tbMini"
+                            Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                            From="#FF3580BF"
+                            To="#FFFFFFFF"
+                            Duration="0:0:0.5"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMenuItem" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                           >
+                <EasingDoubleKeyFrame KeyTime="0" Value="-200"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.55" Value="-200"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+           
+        </Storyboard>
+
+        <Storyboard x:Key="CloseMenu">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="GdMain" 
+                                           Storyboard.TargetProperty="Margin"
+                                           >
+                <EasingThicknessKeyFrame KeyTime="0" Value="200,40,0,0"></EasingThicknessKeyFrame>
+                <EasingThicknessKeyFrame KeyTime="0:0:0.5" Value="0"></EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMain" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                          >
+                <EasingDoubleKeyFrame KeyTime="0" Value="200"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="150"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="50"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMain" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
+                                           >
+                <EasingDoubleKeyFrame KeyTime="0" Value="50"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>-->
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMenu" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                           >
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-50"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-150"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-200"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimation Storyboard.TargetName="tbClose"
+                            Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                            From="#FFFFFFFF"
+                            To="#FF3580BF"
+                            Duration="0:0:0.5"/>
+            <ColorAnimation Storyboard.TargetName="tbMini"
+                            Storyboard.TargetProperty="(Control.Foreground).(SolidColorBrush.Color)"
+                            From="#FFFFFFFF"
+                            To="#FF3580BF"
+                            Duration="0:0:0.5"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bdIco" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="0"  Value="1"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="bdIco" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="0"  Value="1"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="GdMenuItem" 
+                                           Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                           >
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"></EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-200"></EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CornerRadius="0"
+                      GlassFrameThickness="2"
+                      CaptionHeight="40"
+                      UseAeroCaptionButtons="False"
+                      NonClientFrameEdges="None" />
+    </WindowChrome.WindowChrome>
     <Grid>
-        
+        <Grid x:Name="GdMenu" Width="200" HorizontalAlignment="Left" >
+            <Grid.RenderTransform>
+                <TranslateTransform  X="-200"></TranslateTransform>
+            </Grid.RenderTransform>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border x:Name="bdIco" Width="100" Height="100" CornerRadius="50" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <ScaleTransform></ScaleTransform>
+                </Border.RenderTransform>
+                <Border.Background>
+                    <ImageBrush ImageSource="Images/back.jpg"></ImageBrush>
+                </Border.Background>
+            </Border>
+            <Grid x:Name="GdMenuItem" Grid.Row="1">
+                <Grid.RenderTransform>
+                    <TranslateTransform></TranslateTransform>
+                </Grid.RenderTransform>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <RadioButton Grid.Row="1" Style="{StaticResource imgRadioButton}" x:Name="rbReminder" Click="rbReminder_Click">
+                    <RadioButton.RenderTransform>
+                        <TranslateTransform ></TranslateTransform>
+                    </RadioButton.RenderTransform>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="&#xE82F;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
+                        <TextBlock Text="{DynamicResource Reminder}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Grid.Row="2" Style="{StaticResource imgRadioButton}" x:Name="rbHostel" Click="rbHostel_Click">
+                    <RadioButton.RenderTransform>
+                        <TranslateTransform ></TranslateTransform>
+                    </RadioButton.RenderTransform>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="&#xE731;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
+                        <TextBlock Text="{DynamicResource Hostel}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+            </Grid>
+            
+        </Grid>
+        <Grid x:Name="GdMain" Grid.Column="1" Background="White">
+            <Grid.RenderTransform>
+                <TranslateTransform ></TranslateTransform>
+            </Grid.RenderTransform>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+            <CheckBox WindowChrome.IsHitTestVisibleInChrome="True" Style="{StaticResource ckButton}" Foreground="{StaticResource DefBackColor}" FontFamily="Segoe MDL2 Assets" Content="&#xEA42;" Width="25" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"  Background="Transparent" Margin="4">
+                <CheckBox.Triggers>
+                    <EventTrigger RoutedEvent="ToggleButton.Checked" >
+                        <BeginStoryboard Storyboard="{StaticResource OpenMenu}"></BeginStoryboard>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="ToggleButton.Unchecked" >
+                        <BeginStoryboard Storyboard="{StaticResource CloseMenu}"></BeginStoryboard>
+                    </EventTrigger>
+                </CheckBox.Triggers>
+            </CheckBox>
+            <Grid  Grid.Row="1">
+                <Frame x:Name="fram" NavigationUIVisibility="Hidden"/>
+            </Grid>
+           
+        </Grid>
+
+        <StackPanel Orientation="Horizontal" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Button x:Name="bMini" WindowChrome.IsHitTestVisibleInChrome="True" Style="{StaticResource imgButton}" Width="40" Background="Transparent" Click="BMini_Click">
+                <StackPanel>
+                    <TextBlock  x:Name="tbMini" Text="&#xE921;"   FontSize="20"  FontFamily="Segoe MDL2 Assets"  Foreground="#FF3580BF"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="bClose" WindowChrome.IsHitTestVisibleInChrome="True" Style="{StaticResource imgButton}" Width="40" Background="Transparent" Click="BClose_Click">
+                <StackPanel>
+                    <TextBlock x:Name="tbClose" Text="&#xE7E8;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="#FF3580BF"></TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>

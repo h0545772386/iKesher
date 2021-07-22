@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="Address">
+        Address
+    </sys:String>
+    <sys:String x:Key="Hostel">
+        Hostel
+    </sys:String>
+    <sys:String x:Key="Reminder">
+        Reminder
+    </sys:String>
+    <sys:String x:Key="HostelNum">
+        HostelNum
+    </sys:String>
+    <sys:String x:Key="HostelName">
+        HostelName
+    </sys:String>
+    <sys:String x:Key="HostelColor">
+        HostelColor
+    </sys:String>
+    <sys:String x:Key="DateStart">
+        DateStart
+    </sys:String>
+    <sys:String x:Key="DateEnd">
+        DateEnd
+    </sys:String>
+    <sys:String x:Key="OAuthRD">
+        OAuthRD
+    </sys:String>
+    <sys:String x:Key="OAuthWR">
+        OAuthWR
+    </sys:String>
+    <sys:String x:Key="IsActive">
+        IsActive
+    </sys:String>
+    <sys:String x:Key="Status">
+        Status
+    </sys:String>
+    <sys:String x:Key="Action">
+        Action
+    </sys:String>
+    <sys:String x:Key="Save">
+        Save
+    </sys:String>
+    <sys:String x:Key="Edit">
+        Edit
+    </sys:String>
+    <sys:String x:Key="Delete">
+        Action
+    </sys:String>
+    <sys:String x:Key="OK">
+        OK
+    </sys:String>
+    <sys:String x:Key="Cancel">
+        Cancel
+    </sys:String>
+    <sys:String x:Key="Add">
+        Add
+    </sys:String>
+    <sys:String x:Key="Mini">
+        Mini
+    </sys:String>
+    <sys:String x:Key="Close">
+        Close
+    </sys:String>
+
+    <sys:String x:Key="ObjType">
+        ObjType
+    </sys:String>
+    <sys:String x:Key="PopUpAt_YYYYMMDDHHMM">
+        PopUpAt
+    </sys:String>
+    <sys:String x:Key="RemText">
+        RemText
+    </sys:String>
+    <sys:String x:Key="IsRecorsive">
+        IsRecorsive
+    </sys:String>
+    <sys:String x:Key="RecorsivType">
+        RecorsivType
+    </sys:String>
+    <sys:String x:Key="RecorsivTime">
+        RecorsivTime
+    </sys:String>
+    <sys:String x:Key="RecorsivTime1">
+        RecorsivTime1
+    </sys:String>
+    <sys:String x:Key="Frequence">
+        Frequence
+    </sys:String>
+    <sys:String x:Key="RemColor">
+        RemColor
+    </sys:String>
+</ResourceDictionary>

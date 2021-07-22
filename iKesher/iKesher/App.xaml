@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:iKesher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Lang/en-us.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style/MainStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Style/GridViewStyle.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

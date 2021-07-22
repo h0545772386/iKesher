@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Base.cs" />
     <Compile Include="Classes\Doc.cs" />
     <Compile Include="Classes\Reminder.cs" />
     <Compile Include="Classes\User.cs" />
@@ -72,6 +73,28 @@
     <Compile Include="Classes\WorkerRole.cs" />
     <Compile Include="Classes\WorkersAggrgsTotal.cs" />
     <Compile Include="Classes\WorkRole.cs" />
+    <Compile Include="EditReminderWindow.xaml.cs">
+      <DependentUpon>EditReminderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RemainderPage.xaml.cs">
+      <DependentUpon>RemainderPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="EditHostelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditReminderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hostel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lang\en-us.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,14 +113,33 @@
     <Compile Include="Classes\HostelsManager.cs" />
     <Compile Include="Classes\HostelsWrkrPerHour.cs" />
     <Compile Include="Classes\Log.cs" />
+    <Compile Include="EditHostelWindow.xaml.cs">
+      <DependentUpon>EditHostelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hostel.xaml.cs">
+      <DependentUpon>Hostel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RemainderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\GridViewStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\MainStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Model1.cs" />
     <Compile Include="Classes\OAuthObject.cs" />
+    <Compile Include="NumberTextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -126,11 +168,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
     <Folder Include="UserControls\" />
     <Folder Include="Windows\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\back.jpg" />
     <Content Include="Tech\iKesher-1.sql" />
     <Content Include="Tech\iKesher.sql" />
   </ItemGroup>
