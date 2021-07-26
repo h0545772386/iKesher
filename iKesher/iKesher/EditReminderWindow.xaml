@@ -69,10 +69,12 @@
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="7" Grid.Column="1"
                       Style="{StaticResource CbStyle}"></ComboBox>
+            <TextBlock Grid.Row="8" Text="{DynamicResource IsActive}"
+                       Style="{StaticResource tbTital}"></TextBlock>
             <CheckBox Grid.Row="8" Grid.Column="1"
                       VerticalAlignment="Center"
                       FontSize="14"
-                      Content="{DynamicResource IsRecorsive}" ></CheckBox>
+                     Style="{StaticResource toggleCk}" ></CheckBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

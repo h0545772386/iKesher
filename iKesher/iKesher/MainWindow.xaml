@@ -146,6 +146,10 @@
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
                 </Grid.RowDefinitions>
                 <RadioButton Grid.Row="1" Style="{StaticResource imgRadioButton}" x:Name="rbReminder" Click="rbReminder_Click">
                     <RadioButton.RenderTransform>
@@ -163,6 +167,15 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock  Text="&#xE731;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
                         <TextBlock Text="{DynamicResource Hostel}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Grid.Row="3" Style="{StaticResource imgRadioButton}" x:Name="rbUser" Click="rbUser_Click">
+                    <RadioButton.RenderTransform>
+                        <TranslateTransform ></TranslateTransform>
+                    </RadioButton.RenderTransform>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="&#xEF58;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
+                        <TextBlock Text="{DynamicResource User}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
                     </StackPanel>
                 </RadioButton>
             </Grid>

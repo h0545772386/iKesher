@@ -45,5 +45,10 @@ namespace iKesher
         {
             fram.Navigate(new RemainderPage());
         }
+
+        private void rbUser_Click(object sender, RoutedEventArgs e)
+        {
+            fram.Navigate(new UserPage());
+        }
     }
 }

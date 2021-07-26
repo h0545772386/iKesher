@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EditAssignedOAuthWindow.xaml.cs">
+      <DependentUpon>EditAssignedOAuthWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Base.cs" />
     <Compile Include="Classes\Doc.cs" />
     <Compile Include="Classes\Reminder.cs" />
@@ -73,17 +76,81 @@
     <Compile Include="Classes\WorkerRole.cs" />
     <Compile Include="Classes\WorkersAggrgsTotal.cs" />
     <Compile Include="Classes\WorkRole.cs" />
+    <Compile Include="EditAddressWindow.xaml.cs">
+      <DependentUpon>EditAddressWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAtendcTypeWindow.xaml.cs">
+      <DependentUpon>EditAtendcTypeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditCommunicationWindow.xaml.cs">
+      <DependentUpon>EditCommunicationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditDepartmentWindow.xaml.cs">
+      <DependentUpon>EditDepartmentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditDescriptionWindow.xaml.cs">
+      <DependentUpon>EditDescriptionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditDocWindow.xaml.cs">
+      <DependentUpon>EditDocWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditHostelsManagerWindow.xaml.cs">
+      <DependentUpon>EditHostelsManagerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditReminderWindow.xaml.cs">
       <DependentUpon>EditReminderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserWindow.xaml.cs">
+      <DependentUpon>EditUserWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="RemainderPage.xaml.cs">
       <DependentUpon>RemainderPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TitalConverter.cs" />
+    <Compile Include="UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="EditAssignedOAuthWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAddressWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditAtendcTypeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditCommunicationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditDepartmentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditDescriptionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditDocWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditHostelsManagerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EditHostelWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditReminderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditUserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,6 +199,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Style\MainStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

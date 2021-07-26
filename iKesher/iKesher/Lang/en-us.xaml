@@ -92,4 +92,202 @@
     <sys:String x:Key="RemColor">
         RemColor
     </sys:String>
+    <sys:String x:Key="Street">
+        Street
+    </sys:String>
+    <sys:String x:Key="Street1">
+        Street1
+    </sys:String>
+    <sys:String x:Key="City">
+        City
+    </sys:String>
+    <sys:String x:Key="ZipCode">
+        ZipCode
+    </sys:String>
+    <sys:String x:Key="Address1">
+        Address1
+    </sys:String>
+    <sys:String x:Key="Address2">
+        Address2
+    </sys:String>
+    <sys:String x:Key="Address3">
+        Address3
+    </sys:String>
+    <sys:String x:Key="Address4">
+        Address4
+    </sys:String>
+    <sys:String x:Key="On">
+        ON
+    </sys:String>
+    <sys:String x:Key="Off">
+        OFF
+    </sys:String>
+    <sys:String x:Key="AtndcType">
+        AtndcType
+    </sys:String>
+    <sys:String x:Key="AtndcDescr">
+        AtndcDescr
+    </sys:String>
+    <sys:String x:Key="NumOfDays">
+        NumOfDays
+    </sys:String>
+    <sys:String x:Key="NumOfWeeks">
+        NumOfWeeks
+    </sys:String>
+    <sys:String x:Key="CommuName">
+        CommuName
+    </sys:String>
+    <sys:String x:Key="CommuType">
+        CommuType
+    </sys:String>
+    <sys:String x:Key="CommuValue">
+        CommuValue
+    </sys:String>
+    <sys:String x:Key="DeprName">
+        DeprName
+    </sys:String>
+    <sys:String x:Key="DeprDescr">
+        DeprDescr
+    </sys:String>
+    <sys:String x:Key="DiscrTyp">
+        DiscrTyp
+    </sys:String>
+    <sys:String x:Key="DiscrText">
+        DiscrText
+    </sys:String>
+    <sys:String x:Key="DocName">
+        DocName
+    </sys:String>
+    <sys:String x:Key="DocCtg">
+        DocCtg
+    </sys:String>
+    <sys:String x:Key="DocText">
+        DocText
+    </sys:String>
+    <sys:String x:Key="DocPath">
+        DocPath
+    </sys:String>
+    <sys:String x:Key="WrkrNum">
+        WrkrNum
+    </sys:String>
+    <sys:String x:Key="HostMngrType">
+        HostMngrType
+    </sys:String>
+    <sys:String x:Key="FullName">
+        FullName
+    </sys:String>
+    <sys:String x:Key="IsSysAdmin">
+        IsSysAdmin
+    </sys:String>
+    <sys:String x:Key="UName">
+        UName
+    </sys:String>
+    <sys:String x:Key="UPass">
+        UPass
+    </sys:String>
+    <sys:String x:Key="UCode">
+        UCode
+    </sys:String>
+    <sys:String x:Key="UResetPass">
+        UResetPass
+    </sys:String>
+    <sys:String x:Key="U_GUID">
+        U_GUID
+    </sys:String>
+    <sys:String x:Key="User">
+        User
+    </sys:String>
+
+    <sys:String x:Key="ShiftDOW">
+        ShiftDOW
+    </sys:String>
+    <sys:String x:Key="IsHoliday">
+        IsHoliday
+    </sys:String>
+    <sys:String x:Key="IsEveHoliday">
+        IsEveHoliday
+    </sys:String>
+    <sys:String x:Key="IsHoliday1">
+        IsHoliday1
+    </sys:String>
+    <sys:String x:Key="PlanedShiftDate">
+        PlanedShiftDate
+    </sys:String>
+    <sys:String x:Key="PlanedShiftDateIn">
+        PlanedShiftDateIn
+    </sys:String>
+    <sys:String x:Key="PlanedShiftDateOut">
+        PlanedShiftDateOut
+    </sys:String>
+    <sys:String x:Key="ShiftDate">
+        ShiftDate
+    </sys:String>
+    <sys:String x:Key="ShiftDateIn">
+        ShiftDateIn
+    </sys:String>
+    <sys:String x:Key="ShiftDateOut">
+        ShiftDateOut
+    </sys:String>
+    <sys:String x:Key="WHIn">
+        WHIn
+    </sys:String>
+    <sys:String x:Key="WHOut">
+        WHOut
+    </sys:String>
+    <sys:String x:Key="WHTotalHours">
+        WHTotalHours
+    </sys:String>
+    <sys:String x:Key="ShiftType">
+        ShiftType
+    </sys:String>
+    <sys:String x:Key="Reg">
+        Reg
+    </sys:String>
+    <sys:String x:Key="Hol">
+        Hol1
+    </sys:String>
+    <sys:String x:Key="Shb">
+        Shb
+    </sys:String>
+    <sys:String x:Key="FReg">
+        FReg
+    </sys:String>
+    <sys:String x:Key="FHol">
+        FHol
+    </sys:String>
+    <sys:String x:Key="FShb">
+        FShb
+    </sys:String>
+    <sys:String x:Key="Fee">
+        Fee
+    </sys:String>
+    <sys:String x:Key="PerHour">
+        PerHour
+    </sys:String>
+    <sys:String x:Key="PerTrip">
+        PerTrip
+    </sys:String>
+    <sys:String x:Key="Pay4SpltTrip">
+        Pay4SpltTrip
+    </sys:String>
+    <sys:String x:Key="GlobalFee">
+        GlobalFee
+    </sys:String>
+    <sys:String x:Key="GlobalTrip">
+        GlobalTrip
+    </sys:String>
+    <sys:String x:Key="MonthlyBonus">
+        MonthlyBonus
+    </sys:String>
+    <sys:String x:Key="FixedBonus">
+        FixedBonus
+    </sys:String>
+    <sys:String x:Key="FixCredit">
+        FixCredit
+    </sys:String>
+    <sys:String x:Key="Total">
+        Total
+    </sys:String>
+
+
 </ResourceDictionary>

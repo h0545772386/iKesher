@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\work\fiverr\project3\git\iKesher\iKesher\iKesher\App.xaml
-8-1612927832
+18-363890483
 2-1465545874
-31486819386
+4288479713
 181925476124
-EditHostelWindow.xaml;EditReminderWindow.xaml;Hostel.xaml;Lang\en-us.xaml;MainWindow.xaml;RemainderPage.xaml;Style\GridViewStyle.xaml;Style\MainStyle.xaml;
+EditAssignedOAuthWindow.xaml;EditAddressWindow.xaml;EditAtendcTypeWindow.xaml;EditCommunicationWindow.xaml;EditDepartmentWindow.xaml;EditDescriptionWindow.xaml;EditDocWindow.xaml;EditHostelsManagerWindow.xaml;EditHostelWindow.xaml;EditReminderWindow.xaml;EditUserWindow.xaml;Hostel.xaml;Lang\en-us.xaml;MainWindow.xaml;RemainderPage.xaml;Style\GridViewStyle.xaml;Style\MainStyle.xaml;UserPage.xaml;
 
 False
 

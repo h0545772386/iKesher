@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:iKesher">
     <SolidColorBrush x:Key="DefBackColor" Color="#FF3580BF"></SolidColorBrush>
     <SolidColorBrush x:Key="defaultForeground" Color="Black"></SolidColorBrush>
     <SolidColorBrush x:Key="defaultColorLight" Color="#FF00bfa5"></SolidColorBrush>
@@ -395,5 +396,70 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style TargetType="DatePicker">
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+    </Style>
+    <Style x:Key="toggleCk" TargetType="CheckBox">
+        <Setter Property="IsChecked" Value="False"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="Background" Value="{StaticResource DefBackColor}"></Setter>
+        <Setter Property="Tag" Value="{DynamicResource On}"></Setter>
+        <Setter Property="Content" Value="{DynamicResource Off}"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="10" Height="30" Width="80">
+                        <Grid>
+                            <Border x:Name="border" Width="28" Height="28" CornerRadius="9" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="1 0" Background="White">
+                                <Border.RenderTransform>
+                                    <TranslateTransform  X="0"/>
+                                </Border.RenderTransform>
+                            </Border>
+                            <TextBlock x:Name="txt" Text="{TemplateBinding Content}" Margin="19 0" VerticalAlignment="Center" Foreground="White" >
+                                <TextBlock.RenderTransform>
+                                    <TranslateTransform   X="18"></TranslateTransform>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Text" TargetName="txt" Value="{Binding Tag,RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="border" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="50" Duration="00:00:0.2"/>
+                                        <DoubleAnimation Storyboard.TargetName="txt" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="0" Duration="00:00:0.2"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="border" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="0" Duration="00:00:0.2"/>
+                                        <DoubleAnimation Storyboard.TargetName="txt" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" To="28" Duration="00:00:0.2"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="Background" Value="Gray"></Setter>
+                            <Setter Property="Text" TargetName="txt" Value="{Binding Content,RelativeSource={RelativeSource TemplatedParent}}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type local:NumberTextBox}">
+        <Setter Property="FontSize" Value="14"></Setter>
+        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        <Setter Property="Height" Value="30"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
     </Style>
 </ResourceDictionary>

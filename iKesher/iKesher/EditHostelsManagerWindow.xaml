@@ -1,0 +1,72 @@
+﻿<Window x:Class="iKesher.EditHostelsManagerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iKesher"
+        mc:Ignorable="d"
+        Title="EditHostelsManagerWindow" Height="550" Width="600" Style="{StaticResource winmode}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="{DynamicResource HostMngrType}" Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+
+            <TextBlock Grid.Row="1" Text="{DynamicResource HostelNum}" Style="{StaticResource tbTital}"></TextBlock>
+            <local:NumberTextBox Grid.Row="1" Grid.Column="1"></local:NumberTextBox>
+
+            <TextBlock Grid.Row="2" Text="{DynamicResource WrkrNum}" Style="{StaticResource tbTital}"></TextBlock>
+            <local:NumberTextBox Grid.Row="2" Grid.Column="1"></local:NumberTextBox>
+
+            <TextBlock Grid.Row="3" Text="{DynamicResource DateStart}" Style="{StaticResource tbTital}"></TextBlock>
+            <DatePicker Grid.Row="3" Grid.Column="1"></DatePicker>
+
+            <TextBlock Grid.Row="4" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
+            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
+
+            <TextBlock Grid.Row="4" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
+            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
+
+            <TextBlock Grid.Row="5" Text="{DynamicResource OAuthRD}" Style="{StaticResource tbTital}"></TextBlock>
+            <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+            
+            <TextBlock Grid.Row="6" Text="{DynamicResource OAuthWR}" Style="{StaticResource tbTital}"></TextBlock>
+            <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
+
+            <TextBlock Grid.Row="7" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
+            <ComboBox Grid.Row="7" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+          
+            <TextBlock Grid.Row="8" Text="{DynamicResource OAuthWR}" Style="{StaticResource tbTital}"></TextBlock>
+            <CheckBox Style="{StaticResource toggleCk}" Grid.Row="8" Grid.Column="1"></CheckBox>
+
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+            <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>
+            <Button x:Name="bCancel" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Cancel}" Click="BCancel_Click" Margin="10,0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
