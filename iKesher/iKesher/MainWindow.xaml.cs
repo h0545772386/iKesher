@@ -50,5 +50,69 @@ namespace iKesher
         {
             fram.Navigate(new UserPage());
         }
+
+        private void rbAddress_Click(object sender, RoutedEventArgs e)
+        {
+            EditAddressWindow editAddressWindow = new EditAddressWindow();
+            editAddressWindow.ShowDialog();
+        }
+
+        private void rbAssignedOAuth_Click(object sender, RoutedEventArgs e)
+        {
+            EditAssignedOAuthWindow editAssignedOAuthWindow = new EditAssignedOAuthWindow();
+            editAssignedOAuthWindow.ShowDialog();
+        }
+
+        private void rbAtendcType_Click(object sender, RoutedEventArgs e)
+        {
+            EditAtendcTypeWindow editAtendcTypeWindow = new EditAtendcTypeWindow();
+            editAtendcTypeWindow.ShowDialog();
+        }
+
+        private void rbCommunication_Click(object sender, RoutedEventArgs e)
+        {
+            EditCommunicationWindow editCommunicationWindow = new EditCommunicationWindow();
+            editCommunicationWindow.ShowDialog();
+        }
+
+        private void rbDepartment_Click(object sender, RoutedEventArgs e)
+        {
+            EditDepartmentWindow editDepartmentWindow = new EditDepartmentWindow();
+            editDepartmentWindow.ShowDialog();
+        }
+
+        private void rbDescription_Click(object sender, RoutedEventArgs e)
+        {
+            EditDescriptionWindow editDescriptionWindow = new EditDescriptionWindow();
+            editDescriptionWindow.ShowDialog();
+        }
+
+        private void rbDoc_Click(object sender, RoutedEventArgs e)
+        {
+            EditDocWindow editDocWindow = new EditDocWindow();
+            editDocWindow.ShowDialog();
+        }
+
+        private void rbHostelsManager_Click(object sender, RoutedEventArgs e)
+        {
+            EditHostelsManagerWindow editHostelsManagerWindow = new EditHostelsManagerWindow();
+        }
+
+        private void rbWorkerRole_Click(object sender, RoutedEventArgs e)
+        {
+            EditWorkerRoleWindow editWorkRoleWindow = new EditWorkerRoleWindow();
+            editWorkRoleWindow.ShowDialog();
+        }
+
+        private void rbWorkersAggrgsTotal_Click(object sender, RoutedEventArgs e)
+        {
+            fram.Navigate(new WorkersAggrgsPage());
+        }
+
+        private void rbWorkRole_Click(object sender, RoutedEventArgs e)
+        {
+            EditWorkRoleWindow editWorkRoleWindow = new EditWorkRoleWindow();
+            editWorkRoleWindow.ShowDialog();
+        }
     }
 }

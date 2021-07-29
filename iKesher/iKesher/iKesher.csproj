@@ -103,12 +103,21 @@
     <Compile Include="EditUserWindow.xaml.cs">
       <DependentUpon>EditUserWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditWorkerRoleWindow.xaml.cs">
+      <DependentUpon>EditWorkerRoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditWorkRoleWindow.xaml.cs">
+      <DependentUpon>EditWorkRoleWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RemainderPage.xaml.cs">
       <DependentUpon>RemainderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TitalConverter.cs" />
     <Compile Include="UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersAggrgsPage.xaml.cs">
+      <DependentUpon>WorkersAggrgsPage.xaml</DependentUpon>
     </Compile>
     <Page Include="EditAssignedOAuthWindow.xaml">
       <SubType>Designer</SubType>
@@ -151,6 +160,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EditUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditWorkerRoleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditWorkRoleWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -203,6 +220,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WorkersAggrgsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

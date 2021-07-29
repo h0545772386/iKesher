@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:iKesher">
+    <local:TitalConverter x:Key="TitalConverter"></local:TitalConverter>
     <SolidColorBrush x:Key="DefBackColor" Color="#FF3580BF"></SolidColorBrush>
     <SolidColorBrush x:Key="defaultForeground" Color="Black"></SolidColorBrush>
     <SolidColorBrush x:Key="defaultColorLight" Color="#FF00bfa5"></SolidColorBrush>
@@ -160,7 +161,7 @@
     <Style x:Key="imgRadioButton" TargetType="RadioButton">
         <Setter Property="Foreground" Value="Black"></Setter>
         <Setter Property="VerticalAlignment" Value="Center"></Setter>
-        <Setter Property="Height" Value="60"></Setter>
+        <Setter Property="Height" Value="40"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">

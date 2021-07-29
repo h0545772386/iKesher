@@ -23,6 +23,7 @@ namespace iKesher
         public UserPage()
         {
             InitializeComponent();
+            FlowDirection = Base.GetFlowDirection();
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)

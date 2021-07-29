@@ -4,6 +4,33 @@
     <sys:String x:Key="Address">
         Address
     </sys:String>
+    <sys:String x:Key="AssignedOAuth">
+        AssignedOAuth
+    </sys:String>
+    <sys:String x:Key="AtendcType">
+        AtendcType
+    </sys:String>
+    <sys:String x:Key="Communication">
+        Communication
+    </sys:String>
+    <sys:String x:Key="Department">
+        Department
+    </sys:String>
+    <sys:String x:Key="Description">
+        Description
+    </sys:String>
+    <sys:String x:Key="Doc">
+        Doc
+    </sys:String>
+    <sys:String x:Key="HostelsManager">
+        HostelsManager
+    </sys:String>
+    <sys:String x:Key="WorkerRole">
+        WorkerRole
+    </sys:String>
+    <sys:String x:Key="WorkRole">
+        WorkRole
+    </sys:String>
     <sys:String x:Key="Hostel">
         Hostel
     </sys:String>
@@ -288,6 +315,14 @@
     <sys:String x:Key="Total">
         Total
     </sys:String>
-
+    <sys:String x:Key="RoleName">
+        RoleName
+    </sys:String>
+    <sys:String x:Key="RoleDescr">
+        RoleDescr
+    </sys:String>
+    <sys:String x:Key="WorkersAggrgsTotal">
+        WorkersAggrgsTotal
+    </sys:String>
 
 </ResourceDictionary>
