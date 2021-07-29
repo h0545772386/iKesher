@@ -28,13 +28,13 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource RoleName}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Column="1"></TextBox>
+            <TextBox Grid.Column="1" Text="{Binding RoleName}"></TextBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource RoleDescr}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding RoleDescr}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox  Grid.Row="2" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox  Grid.Row="2" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
             <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>

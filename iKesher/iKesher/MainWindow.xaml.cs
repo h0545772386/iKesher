@@ -50,7 +50,14 @@ namespace iKesher
         {
             fram.Navigate(new UserPage());
         }
-
+        private void rbHostelsWrkrPerHour_Click(object sender, RoutedEventArgs e)
+        {
+            fram.Navigate(new HostelsWrkrPerHourPage());
+        }
+        private void rbWorkersAggrgsTotal_Click(object sender, RoutedEventArgs e)
+        {
+            fram.Navigate(new WorkersAggrgsPage());
+        }
         private void rbAddress_Click(object sender, RoutedEventArgs e)
         {
             EditAddressWindow editAddressWindow = new EditAddressWindow();
@@ -104,15 +111,14 @@ namespace iKesher
             editWorkRoleWindow.ShowDialog();
         }
 
-        private void rbWorkersAggrgsTotal_Click(object sender, RoutedEventArgs e)
-        {
-            fram.Navigate(new WorkersAggrgsPage());
-        }
+
 
         private void rbWorkRole_Click(object sender, RoutedEventArgs e)
         {
             EditWorkRoleWindow editWorkRoleWindow = new EditWorkRoleWindow();
             editWorkRoleWindow.ShowDialog();
         }
+
+   
     }
 }

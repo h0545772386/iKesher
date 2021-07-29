@@ -44,52 +44,47 @@
         </Grid>
         <DataGrid Grid.Row="2" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
             <DataGrid.Columns>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding FullName}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource FullName}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
-                    <DataGridTextColumn.Header>
+                <DataGridTemplateColumn  Width="100" >
+                    <DataGridTemplateColumn.Header>
                         <TextBlock Text="{DynamicResource IsSysAdmin}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsSysAdmin}"></CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn  Width="100" Binding="{Binding Status}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource Status}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding UName}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource UName}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding UPass}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource UPass}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTemplateColumn  Width="100">
-                    <DataGridTemplateColumn.Header>
+                <DataGridTextColumn  Width="100" Binding="{Binding UCode}">
+                    <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource UCode}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <CheckBox></CheckBox>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn  Width="100">
-                    <DataGridTemplateColumn.Header>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn  Width="100" Binding="{Binding UResetPass}">
+                    <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource UResetPass}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <CheckBox></CheckBox>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTextColumn  Width="100">
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn  Width="100" Binding="{Binding U_GUID}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource U_GUID}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>

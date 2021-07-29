@@ -45,57 +45,47 @@
         </Grid>
         <DataGrid Grid.Row="2" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
             <DataGrid.Columns>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding PopUpAt_YYYYMMDDHHMM}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource PopUpAt_YYYYMMDDHHMM}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding RemText}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource RemText}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
-                    <DataGridTextColumn.Header>
+                <DataGridTemplateColumn  Width="100">
+                    <DataGridTemplateColumn.Header>
                         <TextBlock Text="{DynamicResource IsRecorsive}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsRecorsive}"></CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn  Width="100" Binding="{Binding RecorsivType}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource RecorsivType}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding RecorsivTime}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource RecorsivTime}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTemplateColumn  Width="100">
-                    <DataGridTemplateColumn.Header>
+                <DataGridTextColumn  Width="100" Binding="{Binding RecorsivTime1}">
+                    <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource RecorsivTime1}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <CheckBox></CheckBox>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn  Width="100">
-                    <DataGridTemplateColumn.Header>
-                        <TextBlock Text="{DynamicResource RecorsivTime1}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <CheckBox></CheckBox>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTextColumn  Width="100">
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn  Width="100" Binding="{Binding Frequence}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource Frequence}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding RemColor}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource RemColor}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>

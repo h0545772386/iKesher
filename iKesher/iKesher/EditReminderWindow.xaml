@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="EditReminderWindow" Height="550" Width="700" Style="{StaticResource winmode}">
+        Title="EditReminderWindow" Height="550" Width="700" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -37,44 +37,53 @@
                        Style="{StaticResource tbTital}"></TextBlock>
             <DatePicker Grid.Column="1"
                         VerticalContentAlignment="Center"
-                        Height="30"></DatePicker>
+                        Height="30"
+                        SelectedDate="{Binding PopUpAt_YYYYMMDDHHMM}"></DatePicker>
             <TextBlock Grid.Row="1" Text="{DynamicResource RemText}"
                        Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" 
+                     Text="{Binding RemText}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource RecorsivType}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="2" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding RecorsivType}"></ComboBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource RecorsivTime}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="3" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding RecorsivTime}"></ComboBox>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource RecorsivTime1}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="4" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding RecorsivTime1}"></ComboBox>
             <TextBlock Grid.Row="5" Text="{DynamicResource Frequence}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="5" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding Frequence}"></ComboBox>
 
             <TextBlock Grid.Row="6" Text="{DynamicResource RemColor}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="6" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding RemColor}"></ComboBox>
             <TextBlock Grid.Row="7" Text="{DynamicResource Status}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <ComboBox Grid.Row="7" Grid.Column="1"
-                      Style="{StaticResource CbStyle}"></ComboBox>
+                      Style="{StaticResource CbStyle}"
+                      SelectedValue="{Binding Status}"></ComboBox>
             <TextBlock Grid.Row="8" Text="{DynamicResource IsActive}"
                        Style="{StaticResource tbTital}"></TextBlock>
             <CheckBox Grid.Row="8" Grid.Column="1"
                       VerticalAlignment="Center"
                       FontSize="14"
-                     Style="{StaticResource toggleCk}" ></CheckBox>
+                     Style="{StaticResource toggleCk}"
+                     IsChecked="{Binding IsActive}"></CheckBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

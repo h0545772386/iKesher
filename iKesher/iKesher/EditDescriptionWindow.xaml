@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="EditDescriptionWindow" Height="350" Width="500" Style="{StaticResource winmode}">
+        Title="EditDescriptionWindow" Height="350" Width="500" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -29,16 +29,16 @@
                 <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource ObjType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding ObjType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource DiscrTyp}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="1" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="1" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding DiscrTyp}"></ComboBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource DiscrText}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox  Grid.Row="2" Grid.Column="1"></TextBox>
+            <TextBox  Grid.Row="2" Grid.Column="1" Text="{Binding DiscrText}"></TextBox>
    
             <TextBlock Grid.Row="3" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="3" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="3" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

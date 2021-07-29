@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="AssignedOAuthWindow" Height="450" Width="500" Style="{StaticResource winmode}">
+        Title="AssignedOAuthWindow" Height="450" Width="500" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -35,22 +35,22 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource ObjType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding ObjType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource OAuthRD}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding OAuthRD}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource OAuthWR}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding OAuthWR}"></TextBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource DateStart}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="3" Grid.Column="1" ></DatePicker>
+            <DatePicker Grid.Row="3" Grid.Column="1" SelectedDate="{Binding DateStart}"></DatePicker>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
+            <DatePicker Grid.Row="4" Grid.Column="1" SelectedDate="{Binding DateEnd}"></DatePicker>
 
             <TextBlock Grid.Row="5" Text="{DynamicResource IsActive}" Style="{StaticResource tbTital}"></TextBlock>
-            <CheckBox  Grid.Row="5" Grid.Column="1" Style="{StaticResource toggleCk}" ></CheckBox>
+            <CheckBox  Grid.Row="5" Grid.Column="1" Style="{StaticResource toggleCk}" IsChecked="{Binding IsActive}"></CheckBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

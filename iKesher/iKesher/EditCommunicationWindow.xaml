@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="EditCommunicationWindow" Height="400" Width="600" Style="{StaticResource winmode}">
+        Title="EditCommunicationWindow" Height="400" Width="600" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -31,21 +31,20 @@
 
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource ObjType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding ObjType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource CommuName}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1" Height="30"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Height="30" Text="{Binding CommuName}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource CommuType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="2" Grid.Column="1" Height="30" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="2" Grid.Column="1" Height="30" Style="{StaticResource CbStyle}" SelectedValue="{Binding CommuType}"></ComboBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource CommuValue}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="3" Grid.Column="1" Height="30"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Height="30" Text="{Binding CommuValue}"></TextBox>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="4" Grid.Column="1" Height="30" VerticalContentAlignment="Center" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="4" Grid.Column="1" Height="30" VerticalContentAlignment="Center" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
-    
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
             <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="EditUserWindow" Height="500" Width="600" Style="{StaticResource winmode}">
+        Title="EditUserWindow" Height="500" Width="600" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -33,28 +33,28 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource FullName}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding FullName}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource UName}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding UName}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource UPass}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox  Grid.Row="2" Grid.Column="1"></TextBox>
+            <TextBox  Grid.Row="2" Grid.Column="1" Text="{Binding UPass}"></TextBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource UCode}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding UCode}"></TextBox>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource UResetPass}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding UResetPass}"></TextBox>
 
             <TextBlock Grid.Row="5" Text="{DynamicResource U_GUID}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding U_GUID}"></TextBox>
             
             <TextBlock Grid.Row="6" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="6" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="6" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
             <TextBlock Grid.Row="7" Text="{DynamicResource IsSysAdmin}" Style="{StaticResource tbTital}"></TextBlock>
-            <CheckBox Style="{StaticResource toggleCk}" Grid.Row="7" Grid.Column="1"></CheckBox>
+            <CheckBox Style="{StaticResource toggleCk}" Grid.Row="7" Grid.Column="1" IsChecked="{Binding IsSysAdmin}"></CheckBox>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
             <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>

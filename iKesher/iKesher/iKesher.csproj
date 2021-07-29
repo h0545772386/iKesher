@@ -109,6 +109,9 @@
     <Compile Include="EditWorkRoleWindow.xaml.cs">
       <DependentUpon>EditWorkRoleWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HostelsWrkrPerHourPage.xaml.cs">
+      <DependentUpon>HostelsWrkrPerHourPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RemainderPage.xaml.cs">
       <DependentUpon>RemainderPage.xaml</DependentUpon>
     </Compile>
@@ -172,6 +175,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Hostel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HostelsWrkrPerHourPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -44,61 +44,46 @@
         </Grid>
         <DataGrid Grid.Row="2" AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.CanContentScroll="True">
             <DataGrid.Columns>
-                <DataGridTextColumn  Width="150">
+                <DataGridTextColumn  Width="150" Binding="{Binding HostelName}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource HostelName}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="100">
+                <DataGridTextColumn  Width="100" Binding="{Binding HostelNum}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource HostelNum}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTextColumn  Width="120">
+                <DataGridTextColumn  Width="120" Binding="{Binding HostelColor}">
                     <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource HostelColor}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTemplateColumn  Width="120">
-                    <DataGridTemplateColumn.Header>
+                <DataGridTextColumn  Width="120" Binding="{Binding DateStart}">
+                    <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource DateStart}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <DatePicker ></DatePicker>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn  Width="120">
-                    <DataGridTemplateColumn.Header>
-                        <TextBlock Text="{DynamicResource DateStart}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <DatePicker ></DatePicker>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn  Width="120" Binding="{Binding DateEnd}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="{DynamicResource DateEnd}" HorizontalAlignment="Center"></TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
                 <DataGridTemplateColumn  Width="100">
                     <DataGridTemplateColumn.Header>
                         <TextBlock Text="{DynamicResource IsActive}" HorizontalAlignment="Center"></TextBlock>
                     </DataGridTemplateColumn.Header>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <CheckBox></CheckBox>
+                            <CheckBox IsChecked="{Binding IsActive}"></CheckBox>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTemplateColumn  Width="120">
-                    <DataGridTemplateColumn.Header>
+                <DataGridTextColumn  Width="120" Binding="{Binding Status}">
+                    <DataGridTextColumn.Header>
                         <TextBlock Text="{DynamicResource Status}" HorizontalAlignment="Center"></TextBlock>
-                    </DataGridTemplateColumn.Header>
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <DatePicker ></DatePicker>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
                 <DataGridTemplateColumn  Width="180">
                     <DataGridTemplateColumn.Header>
                         <TextBlock Text="{DynamicResource Action}" HorizontalAlignment="Center"></TextBlock>

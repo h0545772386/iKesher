@@ -31,6 +31,9 @@
     <sys:String x:Key="WorkRole">
         WorkRole
     </sys:String>
+    <sys:String x:Key="HostelsWrkrPerHour">
+        HostelsWrkrPerHour
+    </sys:String>
     <sys:String x:Key="Hostel">
         Hostel
     </sys:String>

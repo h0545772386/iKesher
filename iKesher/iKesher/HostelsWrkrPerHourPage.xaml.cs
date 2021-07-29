@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace iKesher
 {
     /// <summary>
-    /// WorkersAggrgsPage.xaml 的交互逻辑
+    /// HostelsWrkrPerHourPage.xaml 的交互逻辑
     /// </summary>
-    public partial class WorkersAggrgsPage : Page
+    public partial class HostelsWrkrPerHourPage : Page
     {
-        public WorkersAggrgsPage()
+        public HostelsWrkrPerHourPage()
         {
             InitializeComponent();
             FlowDirection = Base.GetFlowDirection();
@@ -28,7 +28,7 @@ namespace iKesher
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-            // Add a new row(create new item to list)
+
         }
     }
 }

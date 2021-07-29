@@ -31,16 +31,16 @@
                 <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource ObjType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding ObjType}"></ComboBox>
           
             <TextBlock Grid.Row="1" Text="{DynamicResource DocName}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox  Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox  Grid.Row="1" Grid.Column="1" Text="{Binding DocName}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource DocCtg}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="2" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="2" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding DocCtg}"></ComboBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource DocText}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox  Grid.Row="3" Grid.Column="1"></TextBox>
+            <TextBox  Grid.Row="3" Grid.Column="1" Text="{Binding DocText}"></TextBox>
            
             <TextBlock Grid.Row="4" Text="{DynamicResource DocPath}" Style="{StaticResource tbTital}"></TextBlock>
             <Grid   Grid.Row="4" Grid.Column="1" >
@@ -48,14 +48,14 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition Width="30"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBox></TextBox>
+                <TextBox x:Name="tbPath"></TextBox>
                 <Button x:Name="BBrowser" Grid.Column="1" Style="{StaticResource imgButton}" Background="White" Width="30" Height="30" Click="BBrowser_Click" >
                     <TextBlock  Text="&#xED43;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="{StaticResource DefBackColor}"></TextBlock>
                 </Button>
             </Grid>
           
             <TextBlock Grid.Row="5" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="5" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="5" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

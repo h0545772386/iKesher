@@ -169,6 +169,24 @@
                         <TextBlock Text="{DynamicResource User}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
                     </StackPanel>
                 </RadioButton>
+                <RadioButton   Style="{StaticResource imgRadioButton}" x:Name="rbHostelsWrkrPerHour" Click="rbHostelsWrkrPerHour_Click">
+                    <RadioButton.RenderTransform>
+                        <TranslateTransform ></TranslateTransform>
+                    </RadioButton.RenderTransform>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="&#xEF58;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
+                        <TextBlock Text="{DynamicResource HostelsWrkrPerHour}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton  Style="{StaticResource imgRadioButton}" x:Name="rbWorkersAggrgsTotal" Click="rbWorkersAggrgsTotal_Click">
+                    <RadioButton.RenderTransform>
+                        <TranslateTransform ></TranslateTransform>
+                    </RadioButton.RenderTransform>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text="&#xEF58;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
+                        <TextBlock Text="{DynamicResource WorkersAggrgsTotal}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
+                    </StackPanel>
+                </RadioButton>
                 <RadioButton   Style="{StaticResource imgRadioButton}" x:Name="rbAddress" Click="rbAddress_Click">
                     <RadioButton.RenderTransform>
                         <TranslateTransform ></TranslateTransform>
@@ -250,15 +268,7 @@
                         <TextBlock Text="{DynamicResource WorkerRole}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
                     </StackPanel>
                 </RadioButton>
-                <RadioButton  Style="{StaticResource imgRadioButton}" x:Name="rbWorkersAggrgsTotal" Click="rbWorkersAggrgsTotal_Click">
-                    <RadioButton.RenderTransform>
-                        <TranslateTransform ></TranslateTransform>
-                    </RadioButton.RenderTransform>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock  Text="&#xEF58;"   FontSize="22"  FontFamily="Segoe MDL2 Assets" Foreground="White"></TextBlock>
-                        <TextBlock Text="{DynamicResource WorkersAggrgsTotal}" Style="{StaticResource defaultTb}" VerticalAlignment="Center" Foreground="White" Margin="10,0"></TextBlock>
-                    </StackPanel>
-                </RadioButton>
+              
                 <RadioButton  Style="{StaticResource imgRadioButton}" x:Name="rbWorkRole" Click="rbWorkRole_Click">
                     <RadioButton.RenderTransform>
                         <TranslateTransform ></TranslateTransform>

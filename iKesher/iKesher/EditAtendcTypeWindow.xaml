@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iKesher"
         mc:Ignorable="d"
-        Title="EditAtendcTypeWindow" Height="450" Width="600" Style="{StaticResource winmode}">
+        Title="EditAtendcTypeWindow" Height="450" Width="600" Style="{StaticResource winmode}" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -32,24 +32,25 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource AtndcType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding AtndcType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource AtndcDescr}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding AtndcDescr}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource NumOfDays}" Style="{StaticResource tbTital}"></TextBlock>
-            <local:NumberTextBox  Grid.Row="2" Grid.Column="1"></local:NumberTextBox>
+            <local:NumberTextBox  Grid.Row="2" Grid.Column="1" Text="{Binding NumOfDays}"></local:NumberTextBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource NumOfWeeks}" Style="{StaticResource tbTital}"></TextBlock>
-            <local:NumberTextBox Grid.Row="3" Grid.Column="1"></local:NumberTextBox>
+            <local:NumberTextBox Grid.Row="3" Grid.Column="1" Text="{Binding NumOfWeeks}"></local:NumberTextBox>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource DateStart}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
+            <DatePicker Grid.Row="4" Grid.Column="1" SelectedDate="{Binding DateStart}"></DatePicker>
 
             <TextBlock Grid.Row="5" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="5" Grid.Column="1"></DatePicker>
+            <DatePicker Grid.Row="5" Grid.Column="1" SelectedDate="{Binding DateEnd}"></DatePicker>
+            
             <TextBlock Grid.Row="6" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="6" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="6" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

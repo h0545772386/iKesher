@@ -35,34 +35,34 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource ObjType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding ObjType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource Street}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Street}"></TextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource Street1}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Street1}"></TextBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource City}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding City}"></TextBox>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource ZipCode}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding ZipCode}"></TextBox>
 
             <TextBlock Grid.Row="5" Text="{DynamicResource Address1}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Address1}"></TextBox>
 
             <TextBlock Grid.Row="6" Text="{DynamicResource Address2}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Address2}"></TextBox>
 
             <TextBlock Grid.Row="7" Text="{DynamicResource Address3}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="7" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding Address3}"></TextBox>
 
             <TextBlock Grid.Row="8" Text="{DynamicResource Address4}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="8" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="8" Grid.Column="1" Text="{Binding Address4}"></TextBox>
 
             <TextBlock Grid.Row="9" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="9" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="9" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

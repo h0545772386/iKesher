@@ -132,3 +132,5 @@ F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\iKesher.Pro
 F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\iKesher.csproj.GenerateResource.cache
 F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\iKesher.csproj.CoreCompileInputs.cache
 F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\iKesher.csproj.CopyComplete
+F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\HostelsWrkrPerHourPage.g.cs
+F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\HostelsWrkrPerHourPage.baml

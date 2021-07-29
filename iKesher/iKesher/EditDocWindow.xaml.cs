@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,7 +49,11 @@ namespace iKesher
 
         private void BBrowser_Click(object sender, RoutedEventArgs e)
         {
-
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if(openFileDialog.ShowDialog().Value)
+            {
+                tbPath.Text = openFileDialog.FileName;
+            }
         }
     }
 }

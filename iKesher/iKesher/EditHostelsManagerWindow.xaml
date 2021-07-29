@@ -34,34 +34,31 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Text="{DynamicResource HostMngrType}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding HostMngrType}"></ComboBox>
 
             <TextBlock Grid.Row="1" Text="{DynamicResource HostelNum}" Style="{StaticResource tbTital}"></TextBlock>
-            <local:NumberTextBox Grid.Row="1" Grid.Column="1"></local:NumberTextBox>
+            <local:NumberTextBox Grid.Row="1" Grid.Column="1" Text="{Binding HostelNum}"></local:NumberTextBox>
 
             <TextBlock Grid.Row="2" Text="{DynamicResource WrkrNum}" Style="{StaticResource tbTital}"></TextBlock>
-            <local:NumberTextBox Grid.Row="2" Grid.Column="1"></local:NumberTextBox>
+            <local:NumberTextBox Grid.Row="2" Grid.Column="1" Text="{Binding WrkrNum}"></local:NumberTextBox>
 
             <TextBlock Grid.Row="3" Text="{DynamicResource DateStart}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="3" Grid.Column="1"></DatePicker>
+            <DatePicker Grid.Row="3" Grid.Column="1" SelectedDate="{Binding DateStart}"></DatePicker>
 
             <TextBlock Grid.Row="4" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
-
-            <TextBlock Grid.Row="4" Text="{DynamicResource DateEnd}" Style="{StaticResource tbTital}"></TextBlock>
-            <DatePicker Grid.Row="4" Grid.Column="1"></DatePicker>
+            <DatePicker Grid.Row="4" Grid.Column="1" SelectedDate="{Binding DateEnd}"></DatePicker>
 
             <TextBlock Grid.Row="5" Text="{DynamicResource OAuthRD}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding OAuthRD}"></TextBox>
             
             <TextBlock Grid.Row="6" Text="{DynamicResource OAuthWR}" Style="{StaticResource tbTital}"></TextBlock>
-            <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding OAuthWR}"></TextBox>
 
             <TextBlock Grid.Row="7" Text="{DynamicResource Status}" Style="{StaticResource tbTital}"></TextBlock>
-            <ComboBox Grid.Row="7" Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            <ComboBox Grid.Row="7" Grid.Column="1" Style="{StaticResource CbStyle}" SelectedValue="{Binding Status}"></ComboBox>
           
-            <TextBlock Grid.Row="8" Text="{DynamicResource OAuthWR}" Style="{StaticResource tbTital}"></TextBlock>
-            <CheckBox Style="{StaticResource toggleCk}" Grid.Row="8" Grid.Column="1"></CheckBox>
+            <TextBlock Grid.Row="8" Text="{DynamicResource IsActive}" Style="{StaticResource tbTital}"></TextBlock>
+            <CheckBox Style="{StaticResource toggleCk}" Grid.Row="8" Grid.Column="1" IsChecked="{Binding IsActive}"></CheckBox>
 
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">

@@ -22,6 +22,28 @@ namespace iKesher
         public EditWorkerRoleWindow()
         {
             InitializeComponent();
+            FlowDirection = Base.GetFlowDirection();
+            CommandBindings.Add(new CommandBinding(SystemCommands.MinimizeWindowCommand, MimizeWindow));
+            CommandBindings.Add(new CommandBinding(SystemCommands.CloseWindowCommand, CloseWindow));
+        }
+
+        private void CloseWindow(object sender, ExecutedRoutedEventArgs e)
+        {
+            DialogResult = false;
+        }
+
+        private void MimizeWindow(object sender, ExecutedRoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+        private void BClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BCancel_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
