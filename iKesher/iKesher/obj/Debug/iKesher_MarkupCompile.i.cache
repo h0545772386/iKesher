@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\
+D:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\obj\Debug\
 iKesher
 none
 false
 DEBUG;TRACE
-F:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\App.xaml
-221357180443
+D:\杂乱\work\fiverr\project3\git\iKesher\iKesher\iKesher\App.xaml
+251382651489
 2-1465545874
-47-247284732
-181130038602
-EditAssignedOAuthWindow.xaml;EditAddressWindow.xaml;EditAtendcTypeWindow.xaml;EditCommunicationWindow.xaml;EditDepartmentWindow.xaml;EditDescriptionWindow.xaml;EditDocWindow.xaml;EditHostelsManagerWindow.xaml;EditHostelWindow.xaml;EditReminderWindow.xaml;EditUserWindow.xaml;EditWorkerRoleWindow.xaml;EditWorkRoleWindow.xaml;Hostel.xaml;HostelsWrkrPerHourPage.xaml;Lang\en-us.xaml;MainWindow.xaml;RemainderPage.xaml;Style\GridViewStyle.xaml;Style\MainStyle.xaml;UserPage.xaml;WorkersAggrgsPage.xaml;
+49-301477281
+18-160271753
+EditAssignedOAuthWindow.xaml;EditAddressWindow.xaml;EditAtendcTypeWindow.xaml;EditCommunicationWindow.xaml;EditDepartmentWindow.xaml;EditDescriptionWindow.xaml;EditDocWindow.xaml;EditHostelsManagerWindow.xaml;EditHostelWindow.xaml;EditReminderWindow.xaml;EditUserWindow.xaml;EditWHourWindow.xaml;EditWorkerRoleWindow.xaml;EditWorkerWindow.xaml;EditWorkRoleWindow.xaml;Hostel.xaml;HostelsWrkrPerHourPage.xaml;Lang\en-us.xaml;MainWindow.xaml;RemainderPage.xaml;Style\ComboxStyles.xaml;Style\GridViewStyle.xaml;Style\MainStyle.xaml;UserPage.xaml;WorkersAggrgsPage.xaml;
 
 True
 

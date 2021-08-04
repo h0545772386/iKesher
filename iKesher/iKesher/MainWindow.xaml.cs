@@ -103,6 +103,7 @@ namespace iKesher
         private void rbHostelsManager_Click(object sender, RoutedEventArgs e)
         {
             EditHostelsManagerWindow editHostelsManagerWindow = new EditHostelsManagerWindow();
+            editHostelsManagerWindow.ShowDialog();
         }
 
         private void rbWorkerRole_Click(object sender, RoutedEventArgs e)
@@ -119,6 +120,16 @@ namespace iKesher
             editWorkRoleWindow.ShowDialog();
         }
 
-   
+        private void rbWorker_Click(object sender, RoutedEventArgs e)
+        {
+            EditWorkerWindow editWorkerWindow = new EditWorkerWindow();
+            editWorkerWindow.ShowDialog();
+        }
+
+        private void rbWHour_Click(object sender, RoutedEventArgs e)
+        {
+            EditWHourWindow editWHourWindow = new EditWHourWindow();
+            editWHourWindow.ShowDialog();
+        }
     }
 }

@@ -103,8 +103,14 @@
     <Compile Include="EditUserWindow.xaml.cs">
       <DependentUpon>EditUserWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditWHourWindow.xaml.cs">
+      <DependentUpon>EditWHourWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditWorkerRoleWindow.xaml.cs">
       <DependentUpon>EditWorkerRoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditWorkerWindow.xaml.cs">
+      <DependentUpon>EditWorkerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="EditWorkRoleWindow.xaml.cs">
       <DependentUpon>EditWorkRoleWindow.xaml</DependentUpon>
@@ -166,7 +172,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EditWHourWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EditWorkerRoleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditWorkerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,6 +229,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RemainderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\ComboxStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

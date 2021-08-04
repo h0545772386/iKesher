@@ -1,0 +1,306 @@
+﻿<Window x:Class="iKesher.EditWHourWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iKesher"
+        mc:Ignorable="d"
+        Title="EditWHourWindow" Height="750" Width="1000" Style="{StaticResource winmode}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical">
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource HostelNum}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1" Text="{Binding HostelNum}"></local:NumberTextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource WrkrNum}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding WrkrNum}"></local:NumberTextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource ShiftDOW}" Style="{StaticResource tbTital}"></TextBlock>
+                <TextBox Grid.Column="1"  Text="{Binding ShiftDOW}"></TextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource PlanedShiftDate}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1" SelectedDate="{Binding PlanedShiftDate}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource PlanedShiftDateIn}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1" SelectedDate="{Binding PlanedShiftDateIn}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource PlanedShiftDateOut}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1" SelectedDate="{Binding PlanedShiftDateOut}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource ShiftDate}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1" SelectedDate="{Binding ShiftDate}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource ShiftDateIn}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1"  SelectedDate="{Binding ShiftDateIn}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource ShiftDateOut}" Style="{StaticResource tbTital}"></TextBlock>
+                <DatePicker Grid.Column="1"  SelectedDate="{Binding ShiftDateOut}"></DatePicker>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource WHIn}" Style="{StaticResource tbTital}"></TextBlock>
+                <TextBox Grid.Column="1" Text="{Binding WHIn}"></TextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource WHOut}" Style="{StaticResource tbTital}"></TextBlock>
+                <TextBox Grid.Column="1"  Text="{Binding WHOut}"></TextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource WHTotalHours}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding WHTotalHours}"></local:NumberTextBox>
+            </Grid>
+          
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource GlobalFee}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding GlobalFee}"></local:NumberTextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource GlobalTrip}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding GlobalTrip}"></local:NumberTextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource MonthlyBonus}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding MonthlyBonus}"></local:NumberTextBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource FixedBonus}" Style="{StaticResource tbTital}"></TextBlock>
+                <local:NumberTextBox Grid.Column="1"  Text="{Binding FixedBonus}"></local:NumberTextBox>
+            </Grid>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource ShiftType}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Reg}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Hol}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Shb}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Shb}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource FReg}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource FHol}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource FShb}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Fee}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource PerHour}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource PerTrip}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource FixCredit}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Total}" Style="{StaticResource tbTital}"></TextBlock>
+                <ComboBox Grid.Column="1" Style="{StaticResource CbStyle}"></ComboBox>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource Pay4SpltTrip}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <TextBlock Text="1" Margin="0,0,5,0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}" IsChecked="{Binding Pay4SpltTrip1}"></CheckBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource Pay4SpltTrip}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <TextBlock Text="2" Margin="0,0,5,0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}"  IsChecked="{Binding Pay4SpltTrip2}"></CheckBox>
+                </StackPanel>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource IsHoliday}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}"  IsChecked="{Binding IsHoliday}"></CheckBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource IsHoliday}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <TextBlock Text="1" Margin="0,0,5,0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}"  IsChecked="{Binding IsHoliday1}"></CheckBox>
+                </StackPanel>
+            </Grid>
+            <Grid Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource IsEveHoliday}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}"  IsChecked="{Binding IsEveHoliday}"></CheckBox>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock Text="{DynamicResource IsDeleted}" Margin="0" Style="{StaticResource tbTital}"></TextBlock>
+                    <CheckBox  Style="{StaticResource toggleCk}"  IsChecked="{Binding IsDeleted}"></CheckBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+            <Button x:Name="bClose" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Save}" Click="BClose_Click" ></Button>
+            <Button x:Name="bCancel" Width="90" Height="30" Style="{StaticResource imgBtnMenu}" Content="{DynamicResource Cancel}" Click="BCancel_Click" Margin="10,0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -31,6 +31,12 @@
     <sys:String x:Key="WorkRole">
         WorkRole
     </sys:String>
+    <sys:String x:Key="Worker">
+        Worker
+    </sys:String>
+    <sys:String x:Key="WHour">
+        WHour
+    </sys:String>
     <sys:String x:Key="HostelsWrkrPerHour">
         HostelsWrkrPerHour
     </sys:String>
@@ -237,9 +243,6 @@
     <sys:String x:Key="IsEveHoliday">
         IsEveHoliday
     </sys:String>
-    <sys:String x:Key="IsHoliday1">
-        IsHoliday1
-    </sys:String>
     <sys:String x:Key="PlanedShiftDate">
         PlanedShiftDate
     </sys:String>
@@ -327,5 +330,60 @@
     <sys:String x:Key="WorkersAggrgsTotal">
         WorkersAggrgsTotal
     </sys:String>
+    <sys:String x:Key="WrkrType">
+        WrkrType
+    </sys:String>
+    <sys:String x:Key="Gender">
+        Gender
+    </sys:String>
+    <sys:String x:Key="MrgStatus">
+        MrgStatus
+    </sys:String>
+    <sys:String x:Key="ExtrNumb">
+        ExtrNumb
+    </sys:String>
+    <sys:String x:Key="IsManager">
+        IsManager
+    </sys:String>
+    <sys:String x:Key="RolId">
+        RolId
+    </sys:String>
+    <sys:String x:Key="DateStartWork">
+        DateStartWork
+    </sys:String>
+    <sys:String x:Key="DateEndWork">
+        DateEndWork
+    </sys:String>
+    <sys:String x:Key="NNChildsLT">
+        NNChildsLT
+    </sys:String>
+    <sys:String x:Key="NNChilds">
+        NNChilds
+    </sys:String>
+    <sys:String x:Key="PosiScope3M">
+        PosiScope3M
+    </sys:String>
+    <sys:String x:Key="PosiScope2M">
+        PosiScope2M
+    </sys:String>
+    <sys:String x:Key="CWorthy">
+        CWorthy
+    </sys:String>
+    <sys:String x:Key="CRate">
+        CRate
+    </sys:String>
+    <sys:String x:Key="Male">
+        Male
+    </sys:String>
+    <sys:String x:Key="Female">
+        Female
+    </sys:String>
+    <sys:String x:Key="Unknown">
+        Unknown
+    </sys:String>
+    <sys:String x:Key="IsDeleted">
+        IsDeleted
+    </sys:String>
+
 
 </ResourceDictionary>
